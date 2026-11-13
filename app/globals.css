@@ -1,0 +1,64 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+ 
+a { color: #2563eb; text-decoration: none; }
+ 
+.topo {display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a3a5c;
+}
+.topo a { color: white; }
+.topo nav { display: flex; gap: 1.5rem; }
+.logo { font-weight: bold; font-size: 1.3rem; }
+ 
+.conteudo { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.conteudo h1 { margin-bottom: 1rem; }
+ 
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+ 
+.card {
+  display: block;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  color: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.card:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+.card h2 { font-size: 1.1rem; color: #1a3a5c; margin-bottom: 0.3rem; }
+ 
+.etiqueta {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1a3a5c;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+}
+ 
+.detalhe { background: white; border-radius: 8px; padding: 2rem; }
+.detalhe p { margin: 1rem 0; line-height: 1.6; }
+.detalhe dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; }
+.detalhe dt { font-weight: bold; }
+
+.filtros { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+.filtros input, .filtros select, .filtros button {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.filtros input { flex: 1; }
+.filtros button { background: #2563eb; color: white; border: none; cursor: pointer; }
